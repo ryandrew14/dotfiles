@@ -3,6 +3,7 @@
 # shortcuts -- convenience
 alias ls='ls -G'
 alias vim='nvim'
+alias gs='git status'
 
 # shortcuts -- work
 alias p='cd ~/Paperless/paperless'
