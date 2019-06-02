@@ -5,6 +5,10 @@ set softtabstop=0  " use space/tab combo (0 is off)
 set expandtab      " insert spaces instead of tabs
 set smarttab       " tab key indents to next tab stop
 
+" change indent size for .js/.jsx
+autocmd BufRead *.js setlocal shiftwidth=2
+autocmd BufRead *.jsx setlocal shiftwidth=2
+
 
 " ----------- PLUGINS -----------
 call plug#begin('~/.local/share/nvim/plugged')
