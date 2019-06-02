@@ -14,10 +14,6 @@ alias djshell='docker-compose -f ~/Paperless/paperless/docker-compose.yml exec b
 alias utenv='source ~/Paperless/uptime-tracking/uptime_env/bin/activate'
 alias jenk='ssh ryan@jenkins.paperlessparts.com'
 
-# install vim-plug
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
 # loading things with environment variables
 
 export NVM_DIR="$HOME/.nvm"
