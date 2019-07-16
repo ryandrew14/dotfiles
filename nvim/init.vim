@@ -18,10 +18,27 @@ Plug 'zchee/deoplete-jedi'
 Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
+Plug 'vim-syntastic/syntastic'
 
 call plug#end()
+" ----------- PLUGINS -----------
 
-" DEOPLETE SETTINGS
+
+" Deoplete settings
 let g:deoplete#enable_at_startup = 1
 " auto-close method preview window
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+
+
+" Syntastic recommended settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" note: must run `yarn global add eslint` for the following line to work
+let g:syntastic_javascript_checkers = ['eslint']
+
