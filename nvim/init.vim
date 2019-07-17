@@ -5,6 +5,8 @@ set softtabstop=0  " use space/tab combo (0 is off)
 set expandtab      " insert spaces instead of tabs
 set smarttab       " tab key indents to next tab stop
 
+set mouse=a " I am a casual
+
 " change indent size for .js/.jsx
 autocmd BufRead *.js setlocal shiftwidth=2
 autocmd BufRead *.jsx setlocal shiftwidth=2
@@ -58,3 +60,4 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 " --- FZF Keybinds ---
 nnoremap <Leader>g :Rg<CR>
+nnoremap <Leader>f :Files<CR>
