@@ -22,6 +22,8 @@ Plug 'vim-syntastic/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 " ----------- PLUGINS -----------
@@ -54,3 +56,5 @@ let g:syntastic_check_on_wq = 0
 " note: must run `yarn global add eslint` for the following line to work
 let g:syntastic_javascript_checkers = ['eslint']
 
+" --- FZF Keybinds ---
+nnoremap <Leader>g :Rg<CR>
