@@ -20,9 +20,12 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-syntastic/syntastic'
 Plug 'scrooloose/nerdtree'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 
 call plug#end()
 " ----------- PLUGINS -----------
+
 
 " --- NERDTree Settings ---
 " open automatically if no files were specified
