@@ -19,18 +19,27 @@ Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-syntastic/syntastic'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 " ----------- PLUGINS -----------
 
+" --- NERDTree Settings ---
+" open automatically if no files were specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" close vim if a NERDTree is the only thing left open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" open NERDTree
+map <C-n> :NERDTreeToggle<CR>
 
-" Deoplete settings
+" --- Deoplete settings ---
 let g:deoplete#enable_at_startup = 1
 " auto-close method preview window
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 
-" Syntastic recommended settings
+" --- Syntastic recommended settings ---
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
