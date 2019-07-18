@@ -5,6 +5,11 @@ alias ls='ls -G'
 alias vim='nvim'
 alias gs='git status'
 
+# cURL for timing
+function curl-t() {
+    curl -w "@${HOME}/dotfiles/curl/format-timing.txt" -o /dev/null -s "$@";
+}
+
 # shortcuts -- work
 alias p='cd ~/Paperless/paperless'
 alias pup='docker-compose -f ~/Paperless/paperless/docker-compose.yml up -d'
