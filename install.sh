@@ -13,6 +13,7 @@ fi
 
 # symlink config files into correct directories
 ln -s ~/dotfiles/bash/.bash_profile ~/.bash_profile
+ln -s ~/dotfiles/curl/.curlrc ~/.curlrc
 mkdir -p .config/nvim && ln -s ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 
 
