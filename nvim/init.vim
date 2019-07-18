@@ -44,6 +44,7 @@ map <C-n> :NERDTreeToggle<CR>
 let g:deoplete#enable_at_startup = 1
 " auto-close method preview window
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+nnoremap <Leader>c :SyntasticToggleMode<CR>
 
 
 " --- Syntastic recommended settings ---
@@ -53,7 +54,7 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 " note: must run `yarn global add eslint` for the following line to work
 let g:syntastic_javascript_checkers = ['eslint']
