@@ -11,6 +11,9 @@ set mouse=a " I am a casual
 autocmd BufRead *.js setlocal shiftwidth=2
 autocmd BufRead *.jsx setlocal shiftwidth=2
 
+" ----------- KEYBINDS ----------
+nnoremap <TAB> gt
+nnoremap <S-TAB> gT
 
 " ----------- PLUGINS -----------
 call plug#begin('~/.local/share/nvim/plugged')
