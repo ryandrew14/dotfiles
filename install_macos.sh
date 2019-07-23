@@ -15,3 +15,4 @@
 # install useful packages via homebrew
 brew install fzf # for fzf.vim
 brew install ripgrep # better grep, used by fzf
+brew install yarn
