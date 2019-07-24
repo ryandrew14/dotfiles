@@ -26,6 +26,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'vim-syntastic/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'pangloss/vim-javascript'
+Plug 'gabrielelana/vim-markdown'
 Plug 'mxw/vim-jsx'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -65,3 +66,6 @@ let g:syntastic_javascript_checkers = ['eslint']
 " --- FZF Keybinds ---
 nnoremap <Leader>g :Rg<CR>
 nnoremap <Leader>f :Files<CR>
+
+" --- Syntax Highlighting Settings ---
+let g:markdown_enable_spell_checking = 0
