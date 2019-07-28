@@ -1,4 +1,6 @@
 set number
+set splitright
+set splitbelow
 set tabstop=8  	   " max width of tab character (8 is default)
 set shiftwidth=4   " width of indent (also used by =, <, >)
 set softtabstop=0  " use space/tab combo (0 is off)
